@@ -1,5 +1,6 @@
 import { useLayoutEffect, useRef } from "react"
 import gsap from "gsap"
+import { Link } from "react-router-dom";
 
 const Home = () => {
 
@@ -55,13 +56,26 @@ const Home = () => {
                 </h1>
             </div>
 
-            <div className="h-screen flex bg-gray-950 justify-center place-items-center">
+            <div className="h-screen flex flex-col bg-gray-950 justify-center place-items-center">
                 <h1
                     id="welcome"
                     className="text-9xl font-bold text-gray-100 font-spaceGrotesk"
                 >
                     Welcome to My Portfolio
                 </h1>
+
+                
+
+                <Link to="/page1" >
+                <h3
+                    id="welcome"
+                    className="text-3xl font-bold text-gray-100 font-spaceGrotesk mt-10 "
+                >
+                    Click Here
+                </h3>
+
+                </Link>
+
             </div>
 
         </div>
