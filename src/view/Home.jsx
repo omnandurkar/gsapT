@@ -75,6 +75,17 @@ const Home = () => {
                 </h3>
 
                 </Link>
+                <Link to="/page2" >
+                <h3
+                    id="welcome"
+                    className="text-3xl font-bold text-gray-100 font-spaceGrotesk mt-10 "
+                >
+                    Click Here 2
+                </h3>
+
+                </Link>
+
+
 
             </div>
 
