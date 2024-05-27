@@ -6,25 +6,25 @@ const Home = () => {
 
     const comp = useRef(null);
 
-    useLayoutEffect( () => {
-        let ctx = gsap.context( () => {
+    useLayoutEffect(() => {
+        let ctx = gsap.context(() => {
             const t1 = gsap.timeline()
 
             t1.from("#intro-slider", {
-                xPercent : "-100",
-                duration : 1.3,
-                delay : 0.3,
+                xPercent: "-100",
+                duration: 1.3,
+                delay: 0.3,
             }).from(["#title-1", "#title-2", "#title-3"], {
                 opacity: 0,
                 y: "+=30",
-                stagger : 0.5,
+                stagger: 0.5,
             }).to(["#title-1", "#title-2", "#title-3"], {
                 opacity: 0,
                 y: "-+30",
-                stagger : 0.5,
+                stagger: 0.5,
             }).to("#intro-slider", {
-                xPercent : "-100",
-                duration : 1.3,
+                xPercent: "-100",
+                duration: 1.3,
             }).from("#welcome", {
                 opacity: 0,
                 duration: 0.5,
@@ -35,7 +35,7 @@ const Home = () => {
         return () => ctx.revert()
     }, [])
 
-    
+
 
     return (
         <div className="relative" ref={comp} >
@@ -49,7 +49,7 @@ const Home = () => {
                     Om
                 </h1>
                 <h1 className="text-9xl" id="title-2">
-                    Mahendra 
+                    Mahendra
                 </h1>
                 <h1 className="text-9xl" id="title-3">
                     Nandurkar
@@ -64,25 +64,64 @@ const Home = () => {
                     Welcome to My Portfolio
                 </h1>
 
-                
+
 
                 <Link to="/page1" >
-                <h3
-                    id="welcome"
-                    className="text-3xl font-bold text-gray-100 font-spaceGrotesk mt-10 "
-                >
-                    Click Here
-                </h3>
+                    <h3
+                        id="welcome"
+                        className="text-3xl font-bold text-gray-100 font-spaceGrotesk mt-10 "
+                    >
+                        Click Here
+                    </h3>
 
                 </Link>
                 <Link to="/page2" >
-                <h3
-                    id="welcome"
-                    className="text-3xl font-bold text-gray-100 font-spaceGrotesk mt-10 "
-                >
-                    Click Here 2
-                </h3>
+                    <h3
+                        id="welcome"
+                        className="text-3xl font-bold text-gray-100 font-spaceGrotesk mt-10 "
+                    >
+                        Click Here 2
+                    </h3>
 
+                </Link>
+
+                <Link to="/page3" >
+                    <h3
+                        id="welcome"
+                        className="text-3xl font-bold text-gray-100 font-spaceGrotesk mt-10 "
+                    >
+                        Click Here 3
+                    </h3>
+
+                </Link>
+
+                <Link to="/page4" >
+                    <h3
+                        id="welcome"
+                        className="text-3xl font-bold text-gray-100 font-spaceGrotesk mt-10 "
+                    >
+                        Click Here 4
+                    </h3>
+
+                </Link>
+
+                <Link to="/page5" >
+                    <h3
+                        id="welcome"
+                        className="text-3xl font-bold text-gray-100 font-spaceGrotesk mt-10 "
+                    >
+                        Click Here 5
+                    </h3>
+
+                </Link>
+
+                <Link to="/page6" >
+                    <h3
+                        id="welcome"
+                        className="text-3xl font-bold text-gray-100 font-spaceGrotesk mt-10 "
+                    >
+                        Click Here 6
+                    </h3>    
                 </Link>
 
 
