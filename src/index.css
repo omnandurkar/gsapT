@@ -8,3 +8,16 @@ body {
 
 
 }
+
+.i {
+    position: relative;
+}
+
+.dot {
+    position: absolute;
+    top: -0.59em;
+    /* Adjust this value to position the dot above the 'ı' as needed */
+    left: 0;
+    right: 0;
+    margin: auto;
+}

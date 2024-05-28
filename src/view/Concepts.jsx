@@ -4,6 +4,7 @@ import ScrollTrigger from '../components/ScrollTriggerComponent'
 import PinComponent from '../components/PinComponent'
 import SVGAnimation from '../components/SVGAnimation'
 import Cursor from '../components/Cursor'
+import TextAnimation from '../components/TextAnimation'
 
 const Concepts = () => {
     return (
@@ -13,15 +14,17 @@ const Concepts = () => {
 
 
             <>
-                <Timeline />
+                    <Timeline />
 
-                <ScrollTrigger/>
-                
-                <PinComponent/>
+                    <ScrollTrigger/>
+                    
+                    <PinComponent/>
 
-                <SVGAnimation/>
+                    <SVGAnimation/>
 
-                <Cursor/>
+                    <Cursor/>
+
+                <TextAnimation/>
             </>
 
         </div>
