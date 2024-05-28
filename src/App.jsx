@@ -7,9 +7,18 @@ import Page3 from './view/Page3';
 import Page4 from './view/Page4';
 import Page5 from './view/Page5';
 import Page6 from './view/Page6';
+import Concepts from './view/Concepts';
+
+// import ScrollTrigger from  "gsap/ScrollTrigger";  
+
+
+// gsap.registerPlugin(ScrollTrigger) 
 
 
 function App() {
+  
+
+  
 
   const router = createBrowserRouter([
     {
@@ -41,10 +50,16 @@ function App() {
       path : "/page5",
       element : <Page5/>
     },
+    
 
     {
       path : "/page6",
       element : <Page6/>
+    },
+
+    {
+      path : "/concepts",
+      element : <Concepts/>
     }
 
   ])
