@@ -9,7 +9,7 @@ const PinComponent = () => {
 
   useGSAP(() => {
     gsap.to('#pin h2', {
-      x: '-150%',
+      x: '-190%',
       scrollTrigger: {
         trigger: '#pin',
         scroller: "body",
@@ -30,7 +30,7 @@ const PinComponent = () => {
     <div >
       <h1 className="text-4xl text-center font-bold underline">Pin</h1>
       <div id="pin" className="h-screen mt-0 px-20">
-        <h2 className="text-[514px] translate-x-96">Experience</h2>
+        <h2 className="text-[514px] translate-x-96">JevlissKaaa</h2>
       </div>
       {/* <div className='bg-slate-500 h-screen'>
 

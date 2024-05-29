@@ -27,6 +27,9 @@ const Concepts = () => {
                 <TextAnimation/>
             </>
 
+            <h2 className='text-4xl text-center my-32  font-bold'>Are tanik aur upar niche karo   इतना में hi लूल hovigye kya</h2>
+
+
         </div>
     )
 }

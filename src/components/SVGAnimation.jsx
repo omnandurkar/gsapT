@@ -16,10 +16,10 @@ const SVGAnimation = () => {
             const svgRect = event.currentTarget.getBoundingClientRect();
             const xRelativeToSVG = event.clientX - svgRect.left;
             const yRelativeToSVG = event.clientY - svgRect.top;
-    
+
             const newX = 10 + (xRelativeToSVG - 100) / 1; // Calculate new x coordinate
             const newY = 100 + (yRelativeToSVG - 80) / 1; // Calculate new y coordinate
-    
+
             const newPath = `M 10 100 Q ${newX} ${newY} 1400 100`;
             setPath(newPath);
         };
@@ -28,9 +28,9 @@ const SVGAnimation = () => {
 
         string.addEventListener("mouseleave", () => {
             gsap.to("svg path", {
-                attr : {d : finalPath },
-                duration : 0.8,
-                ease : "elastic.out(1,0.2)",
+                attr: { d: finalPath },
+                duration: 0.8,
+                ease: "elastic.out(1,0.2)",
             })
             console.log("left");
         });
@@ -46,15 +46,16 @@ const SVGAnimation = () => {
     useEffect(() => {
         gsap.to("svg path", {
             attr: { d: path },
-            duration : 0.3,
-            ease : "power3.out",
+            duration: 0.3,
+            ease: "power3.out",
         });
     }, [path]);
 
     return (
-        <div>
+        <div className='mb-32'>
 
-<h1 className="text-4xl text-center font-bold underline">SVG Animation</h1>
+            <h1 className="text-4xl text-center font-bold underline">SVG Animation</h1>
+            <h2 className='text-2xl text-center font-bold my-16'>तनिक तार को छेड़ो तो</h2>
 
             <div
                 ref={stringRef}
@@ -65,7 +66,7 @@ const SVGAnimation = () => {
                     <path d={path} stroke="white" fill="transparent" />
                 </svg>
             </div>
-            
+
         </div>
     );
 };

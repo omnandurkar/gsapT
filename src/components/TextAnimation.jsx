@@ -39,8 +39,8 @@ const TextAnimation = () => {
             scrollTrigger: {
                 trigger: 'h6',
                 start: 'top 80%',
-                end: 'bottom 60%',
-                markers: true,
+                end: 'bottom 40%',
+                // markers: true,
                 scrub: 2
             }
         });
@@ -54,8 +54,8 @@ const TextAnimation = () => {
             scrollTrigger: {
                 trigger: 'h6',
                 start: 'top 80%',
-                end: 'bottom 60%',
-                markers: true,
+                end: 'bottom 40%',
+                // markers: true,
                 scrub: 2
             }
         });
@@ -68,9 +68,9 @@ const TextAnimation = () => {
             ease: "back.out",
             scrollTrigger: {
                 trigger: 'h6',
-                start: 'top 80%',
+                start: 'top 40%',
                 end: 'bottom 60%',
-                markers: true,
+                // markers: true,
                 scrub: 2
             }
         });
@@ -83,16 +83,16 @@ const TextAnimation = () => {
             ease: "elastic.out",
             scrollTrigger: {
                 trigger: 'h6',
-                start: 'top 80%',
-                end: 'bottom 20%',
-                markers: true,
+                start: 'top 70%',
+                end: 'bottom 40%',
+                // markers: true,
                 scrub: 2
             }
         });
     }, []);
 
     return (
-        <div className='h-screen bg-slate-900 p-10 text-white flex flex-col justify-center items-center'>
+        <div className='h-screen mt-32 bg-slate-900 p-10 text-white flex flex-col justify-center items-center'>
             <h6 className="text-9xl text-center font-bold overflow-y-hidden">TextAnimation</h6>
             {/* <div className='h-screen'></div> */}
         </div>

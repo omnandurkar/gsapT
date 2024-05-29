@@ -1,5 +1,10 @@
 import { useRef, useEffect } from 'react';
 import gsap from 'gsap';
+import Page2 from './Page2';
+import Page3 from './Page3';
+import Page4 from './Page4';
+import Page5 from './Page5';
+import Page6 from './Page6';
 
 const Page1 = () => {
     const gsapRef1 = useRef(null);
@@ -53,10 +58,30 @@ const Page1 = () => {
     }, []);
 
     return (
-        <div className="h-screen flex flex-col justify-around bg-slate-900 pt-10">
-            <div ref={gsapRef1} className="m-10 box h-36 w-36 bg-gradient-to-br from-blue-500 to-purple-700 shadow-lg shadow-slate-800 rounded-lg"></div>
-            <div ref={gsapRef2} className="m-10 box h-16 w-16 cursor-pointer bg-gradient-to-br from-blue-500 to-purple-700 shadow-lg shadow-slate-800 rounded-lg"></div>
-            <div className="click-me-text text-white text-start ms-10 opacity-0">Click me 👆    </div>
+        <div className='bg-slate-900 text-white'>
+            <div className="h-screen flex flex-col justify-around  pt-10">
+                <div ref={gsapRef1} className="m-10 box h-36 w-36 bg-gradient-to-br from-blue-500 to-purple-700 shadow-lg shadow-slate-800 rounded-lg"></div>
+                <div ref={gsapRef2} className="m-10 box h-16 w-16 cursor-pointer bg-gradient-to-br from-blue-500 to-purple-700 shadow-lg shadow-slate-800 rounded-lg"></div>
+                <div className="click-me-text text-white text-start ms-10 opacity-0">Click me 👆    </div>
+            </div>
+
+            <h3 className='text-3xl text-center font-bold '>Anim2</h3>
+
+            <Page3 />
+
+            <h3 className='text-3xl text-center font-bold'>Anim3</h3>
+
+            <Page4 />
+
+            <h3 className='text-3xl text-center font-bold'>Anim4</h3>
+
+
+            <Page5 />
+            <h3 className='text-3xl text-center font-bold'>Anim5</h3>
+
+            <Page2 />
+
+
         </div>
     );
 };

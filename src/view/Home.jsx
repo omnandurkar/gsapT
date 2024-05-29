@@ -28,6 +28,7 @@ const Home = () => {
             }).from("#welcome", {
                 opacity: 0,
                 duration: 0.5,
+                stagger: 0.5,
             })
 
         }, comp)
@@ -43,8 +44,11 @@ const Home = () => {
 
             <div
                 id="intro-slider"
-                className="h-screen p-10 bg-gray-50 absolute top-0 left-0 font-spaceGrotesk z-10 w-full flex flex-col gap-10 tracking-tight"
+                className="h-screen p-10 bg-gray-50 absolute top-0 left-0 font-extrabold z-10 w-full flex flex-col gap-10 tracking-tight"
             >
+                <h1 className="text-9xl font-extrabold" id="title-1">
+                    Learn Animation with
+                </h1>
                 <h1 className="text-9xl" id="title-1">
                     Om
                 </h1>
@@ -56,12 +60,12 @@ const Home = () => {
                 </h1>
             </div>
 
-            <div className="h-screen flex flex-col bg-gray-950 justify-center place-items-center">
+            <div className="h-screen flex flex-col bg-gray-950 justify-center place-items-center space-y-20">
                 <h1
                     id="welcome"
-                    className="text-9xl font-bold text-gray-100 font-spaceGrotesk"
+                    className="text-7xl font-bold text-gray-100 font-spaceGrotesk"
                 >
-                    Welcome to My Portfolio
+                    जालिक विकास के जादू<span className="text-red-500">i</span>  खेल में आपका स्वागत है
                 </h1>
 
 
@@ -71,11 +75,11 @@ const Home = () => {
                         id="welcome"
                         className="text-3xl font-bold text-gray-100 font-spaceGrotesk mt-10 "
                     >
-                        Click Here
+                        Basic Animations dekhne ke liye yaha click kare
                     </h3>
 
                 </Link>
-                <Link to="/page2" >
+                {/* <Link to="/page2" >
                     <h3
                         id="welcome"
                         className="text-3xl font-bold text-gray-100 font-spaceGrotesk mt-10 "
@@ -113,14 +117,14 @@ const Home = () => {
                         Click Here 5
                     </h3>
 
-                </Link>
+                </Link> */}
 
                 <Link to="/page6" >
                     <h3
                         id="welcome"
                         className="text-3xl font-bold text-gray-100 font-spaceGrotesk mt-10 "
                     >
-                        Click Here 6
+                        Makkhi Marne ka <span className="text-red-500">खूनी खेल</span>  khelne ke liye yaha 
                     </h3>    
                 </Link>
 
@@ -129,7 +133,7 @@ const Home = () => {
                         id="welcome"
                         className="text-3xl font-bold text-gray-100 font-spaceGrotesk mt-10 "
                     >
-                        Concepts
+                        दिल के तार ❤️ jodne ke liye yaha
                     </h3>    
                 </Link>
 
