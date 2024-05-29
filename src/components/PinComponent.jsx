@@ -17,6 +17,7 @@ const PinComponent = () => {
         end: 'top -450%',
         scrub: 2,
         pin: true,
+        
       }
     });
 

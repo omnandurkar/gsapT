@@ -85,6 +85,7 @@ const TextAnimation = () => {
                 trigger: 'h6',
                 start: 'top 70%',
                 end: 'bottom 40%',
+        
                 // markers: true,
                 scrub: 2
             }

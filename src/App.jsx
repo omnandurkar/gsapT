@@ -8,6 +8,10 @@ import Page4 from './view/Page4';
 import Page5 from './view/Page5';
 import Page6 from './view/Page6';
 import Concepts from './view/Concepts';
+import SmoothScroll from './view/SmoothScroll';
+import './view/locomotive-scroll.css';
+
+
 
 // import ScrollTrigger from  "gsap/ScrollTrigger";  
 
@@ -60,6 +64,11 @@ function App() {
     {
       path : "/concepts",
       element : <Concepts/>
+    },
+
+    {
+      path : "/smooth-scroll",
+      element : <SmoothScroll/>
     }
 
   ])

@@ -132,10 +132,15 @@ const Home = () => {
                     <h3
                         id="welcome"
                         className="text-3xl font-bold text-gray-100 font-spaceGrotesk mt-10 "
-                    >
+                        >
                         दिल के तार ❤️ jodne ke liye yaha
                     </h3>    
                 </Link>
+
+                <a id="welcome" className="text-3xl font-bold text-gray-100 font-spaceGrotesk mt-10 " href="https://locomotive-scroll-vert.vercel.app/">
+                        
+                    Locomotion ka Maza Uthaye
+                </a>
 
 
 
