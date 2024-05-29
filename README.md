@@ -1,6 +1,3 @@
-Sure, here's a draft of a README file for your gsapT repository:
-
-```markdown
 # gsapT
 
 This repository showcases a React Vite application that demonstrates various GSAP (GreenSock Animation Platform) animations and effects.
@@ -31,4 +28,5 @@ Explore the application to see the various GSAP animations and effects in action
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a pull request.
+
 
